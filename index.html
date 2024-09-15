@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/left.css">
+    <link rel="stylesheet" href="styles/right.css">
+    <title>Mi Portafolio</title>
+</head>
+<body>
+    <div class="left-container">
+        <header>
+        <div class="container-img-profile">
+            <img class="img-profile" src="assets/img/IMG_20240808_072128.jpg" alt="Imagen perfil">  
+        </div>
+
+        <div class="container-name-profile">
+            <h1 class="name-profile">Laura N. Serna Cadavid</h1>
+        </div>
+
+        <nav class="navbar-profile">
+            <ul>
+                <li><a href="#section-profile">Perfil</a></li>
+                <li><a href="#section-projects">Proyectos</a></li>
+                <li><a href="#section-references">Referencias</a></li>
+                <li><a href="#section-experiences">Experiencia</a></li>
+            </ul>
+        </nav>
+        
+        <div class="container-logo">
+            <img src="assets/img/enyoi-logo negro.png" alt="logotipo">
+        </div>
+        </header>
+        <footer>
+            <nav class="navbar-social-networks">
+                <ul>
+                    <li><a href="https://www.facebook.com/laura.serna.58152559?locale=es_LA"><i class='bx bxl-facebook-circle' style='color:#500b49'  ></i>
+                    <li><a href="https://wa.link/t9wbd3"><i class='bx bxl-whatsapp-square' style='color: #500b49' ></i>
+                    <li><a href="https://www.linkedin.com/in/laura-serna-93a471318/"><i class='bx bxl-linkedin-square' style='color: #500b49' ></i>
+                    <li><a href="mailto:nataliaserna0527@gmail.com"><i class='bx bxl-gmail' style='color:#500b49' ></i>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <div class="right-container">
+        <main class="main-container">
+            <section id="section-profile" class="section-info section-profile">
+                <h2>Perfil</h2>
+                <p>
+                    Soy una desarrolladora fullstack con experiencia en la creación de aplicaciones web dinámicas y escalables. 
+                Manejo tecnologías front-end como HTML, CSS, JavaScript y frameworks como React y Angular, así como tecnologías back-end como Node.js, Express, y bases de datos SQL/NoSQL. Apasionada por resolver problemas complejos, optimizar el rendimiento y crear experiencias de usuario excepcionales. Disponible para proyectos freelance y oportunidades laborales en desarrollo web y software
+                </p>
+            </section>
+            <section id="section-projects" class="section-info section-projects">
+                <h2>Proyectos</h2>
+                <div class="container-cards">
+                    <div class="card-projects">
+                        <div class="container-img-card">
+                            <img src="https://josecarlosalmansa.com/img/monitor-web.png" alt="Proyecto 1">
+                        </div>
+                        <div class="container-description-card">
+                            <h3>Mi Portafolio</h3>
+                            <p> 
+                                Mi portafolio es una herramienta para mostrar mis proyectos en un formato atractivo y fácil de navegar.
+                            </p>
+                            <a href="Ir a proyecto">Ir a proyecto</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-references" class="section-info section-references">
+                <h2>Referencias</h2>
+                <div class="card-references">
+                    <div class="card-reference">
+                        <p>Nombre:<span> Luis Cervantes</span></p>
+                        <p>Cargo:<span> Desarrollador Frontend</span></p>
+                        <p>Teléfono:<span> 3016869796</span></p>
+                        <p>Correo:<span> <a href="https://www.linkedin.com/in/luis-antonio-cervantes-ortega/" class='bx bxl-gmail' style='color:#500b49'></a></span></p>
+                    </div>                    
+                    <div class="card-reference">
+                        <p>Nombre:<span> Juan Pablo López</span></p>
+                        <p>Cargo:<span> Desarrollador Backend</span></p>
+                        <p>Teléfono:<span> 3105908769</span></p>
+                        <p>Correo:<span> <a href="https://www.linkedin.com/in/juanpablolopez/" class='bx bxl-gmail' style='color:#500b49'></a></span></p>
+                    </div>                      
+                </div>                        
+            </section>
+            <section id="section-experiences" class="section-info section-experiences">
+                <h2>Experiencias</h2>
+                <div class="container-experiences">
+                    <div class="card-experience">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7hMqKWp3pLEG6UPolvcZpoAUamM-NOXUeCA&s" alt="JavaScript">
+                        <progress class="progress-bar" value="50" max="100"></progress>
+                        <p>Básico</p>
+                    </div>      
+                    <div class="card-experience">
+                        <img src="https://e7.pngegg.com/pngimages/410/100/png-clipart-web-development-html-responsive-web-design-logo-javascript-html-angle-web-design-thumbnail.png" alt="HTML">
+                        <progress class="progress-bar" value="50" max="100"></progress>
+                        <p>Básico</p>
+                    </div>
+                    <div class="card-experience">
+                        <img src="https://damiandeluca.com.ar/wp-content/uploads/css3Logo.png" alt="CSS">
+                        <progress class="progress-bar" value="50" max="100"></progress>
+                        <p>Básico</p>
+                    </div>
+                </div>        
+            </section>
+        </main>
+    </div>
+    <script src="scripts/app.js"></script>  <!-- Importar JavaScript para animaciones y interactividad -->
+</body>
+</html>

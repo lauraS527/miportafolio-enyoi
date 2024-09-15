@@ -1,0 +1,124 @@
+body > .left-container {
+    width: 30%;
+    height: 100%;
+    background-color: var(--first-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.left-container > header {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header > .container-img-profile {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img-profile > .img-profile {
+    width: 60%;
+    border-radius: 40%;
+}
+header > .container-name-profile {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: aliceblue;
+}
+
+.container-name-profile > .name-profile {
+font-size: 2rem;
+margin-top: 1rem;
+border-bottom: #fff solid 2px;
+}
+
+header > .navbar-profile {
+    width: 100%;
+    height: 50%;
+}
+
+.navbar-profile > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.navbar-profile > ul > li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.navbar-profile > ul > li > a {
+    color: aliceblue;
+    text-decoration: none;
+    text-shadow: -2px -2px 4px var(--second-color);
+}
+
+.navbar-profile > ul > li > a:hover {
+    text-shadow: 2px 2px 4px var(--terciary-color);
+    border-bottom: solid 2px #f6eaea;
+}
+
+header > .container-logo {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.container-logo > img {
+    width: 9.2rem;
+    height: 3.6rem;
+}
+
+.left-container > footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > .navbar-social-networks {
+    width: 100%;
+}
+
+.navbar-social-networks > ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-social-networks > ul > li {
+    list-style: none;
+}
+.bx {
+    font-size: 2rem;
+    color: var(--terciary-color);
+    border-radius: 50%;
+    margin: 0.5rem;
+    background-color: rgb(228, 226, 226);
+}
+
+.bx:hover {
+    background: none;
+    box-shadow: 0 0 10px var(--terciary-color);
+}

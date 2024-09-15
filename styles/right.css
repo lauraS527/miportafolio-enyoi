@@ -1,0 +1,199 @@
+body > .right-container {
+    width: 70%;
+    height: max-content;
+    background-color: var(--second-color);
+    position: relative;
+    padding: 1rem;
+    left: 30%;
+}   
+
+.right-container > .main-container {
+    width: 98%;
+    height: max-content
+    display flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-info {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.section-info > h2 {
+    color: var(--fourth-color);
+    font-size: 2rem;
+    border-bottom: solid 2px #fff;
+    padding-bottom: 0.5rem;
+}
+
+.section-profile > p {
+    margin-top: 0.5rem;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    color: #050505;
+}
+
+.container-cards {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-projects {
+    width: 18rem;
+    height: 12rem;
+    border-radius: 10px;
+    background-color: var(--terciary-color);
+    margin: 1rem;
+    display: flex;
+}
+
+.card-projects > .container-img-card {
+    width: 50%;
+    height: 100%;
+}
+
+.container-img-card > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px 0 0 7px;
+    display: block;
+}
+
+.card-projects > .container-description-card {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    border-radius: 0 7px 7px 0;
+    flex-direction: column;
+    align-items:center;
+}    
+
+.container-description-card > h3,
+.container-description-card > p {
+    text-align: center;
+    color:#050505;
+    font-size: 1rem;
+    margin-top: 0.2rem;    
+} 
+
+.container-description-card > p {
+    font-size: 0.8rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.container-description-card > a {
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 0.6rem;
+    text-align: center;
+    width: 5rem;
+    padding: 0.5rem;
+    color:darkgray; 
+    background-color: var(--first-color);
+    border-radius: 15px;
+}
+
+.container-description-card > a:hover {
+    background-color: var(--second-color);
+    box-shadow: 0 0 10px #fff;
+}
+
+.card-references {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card-references >.card-reference {
+    width: 12rem;
+    height: 11rem;
+    background-color: var(--first-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    padding: 1rem;
+    color: #050505;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.card-reference > p > span {
+    font-size: 0.8rem;
+    text-align: right;
+    font-weight: 600;
+    color:#fff;
+}
+
+.card-reference >.bx {
+    font-size: 1rem;
+    color: var(--terciary-color);
+    border-radius: 50%;
+    margin: 0.2rem;
+    background-color: rgb(228, 226, 226);
+    text-decoration: none;
+}
+
+.bx:hover {
+    background: none;
+    box-shadow: 0 0 10px var(--terciary-color);
+}
+
+.container-experiences {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-experience {
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.card-experience > img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.progress-bar {
+    width: 8rem;
+    height: 1rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: #874484;
+}
+
+.progress-bar::-moz-progress-bar {
+    background-color: #874484;
+}
+
+.progress-bar::-ms-fill {
+    background-color: #874484;
+}
+
+.card-experience > p {
+    color: #050505;
+}
