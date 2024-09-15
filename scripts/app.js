@@ -4,7 +4,7 @@ const projects = [
         imgProject: 'https://josecarlosalmansa.com/img/monitor-web.png'
         titleProject: 'Mi Portafolio',
         descriptionProject: 'Mi portafolio es una herramienta para mostrar mis proyectos en un formato atractivo y fácil de navegar.',
-        linkProject: 'https://github.com/juanpablo-lopez/mi-portafolio',
+        linkProject: 'https://hoja-de-vida-ashy.vercel.app/',
     }
 ]
 
