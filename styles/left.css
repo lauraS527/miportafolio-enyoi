@@ -16,6 +16,7 @@ body > .left-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 40px;
 }
 
 header > .container-img-profile {
