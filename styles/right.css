@@ -9,17 +9,16 @@ body > .right-container {
 
 .right-container > .main-container {
     width: 98%;
-    height: max-content
-    display flex;
+    height: max-content;
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    height: 100%;
 }
 
 .section-info {
     width: 100%;
-    height: 25%;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -126,7 +125,7 @@ body > .right-container {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items:left;
+    align-items: flex-start;
     padding: 1rem;
     color: #050505;
     line-height: 1.5rem;
@@ -163,7 +162,7 @@ body > .right-container {
 
 .card-experience {
     width: 12rem;
-    height: 12rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;

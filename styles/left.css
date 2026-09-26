@@ -4,36 +4,41 @@ body > .left-container {
     background-color: var(--first-color);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
+    left: 0;
+    overflow-y: auto;
+padding: 1.5rem 1rem;
 }
 
 .left-container > header {
     width: 100%;
-    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 40px;
+    gap: 1.2rem;
 }
 
 header > .container-img-profile {
-    width: 80%;
-    height: 60%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container-img-profile > .img-profile {
-    width: 60%;
-    border-radius: 40%;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 header > .container-name-profile {
     width: 100%;
-    height: 10%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -41,35 +46,34 @@ header > .container-name-profile {
 }
 
 .container-name-profile > .name-profile {
-font-size: 2rem;
-margin-top: 1rem;
+font-size: 1.5rem;
 border-bottom: #fff solid 2px;
+padding-bottom: 0.3rem;
 }
 
 header > .navbar-profile {
     width: 100%;
-    height: 50%;
 }
 
 .navbar-profile > ul {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    font-size: 2rem;
+    gap: 0.8rem;
+    font-size: 1.2rem;
+    padding: 0;
 }
 
 .navbar-profile > ul > li {
     list-style: none;
-    margin-bottom: 1rem;
 }
 
 .navbar-profile > ul > li > a {
     color: aliceblue;
     text-decoration: none;
     text-shadow: -2px -2px 4px var(--second-color);
+    transition: all 0.3s ease;
 }
 
 .navbar-profile > ul > li > a:hover {
@@ -79,33 +83,31 @@ header > .navbar-profile {
 
 header > .container-logo {
     width: 100%;
-    height: 15%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    margin-top: 0.5rem;
 }
 
 .container-logo > img {
-    width: 9.2rem;
+    width: 8rem;
     height: 3.6rem;
+    object-fit: contain;
 }
 
 .left-container > footer {
     width: 100%;
-    height: 10%;
+    padding-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-footer > .navbar-social-networks {
-    width: 100%;
 }
 
 .navbar-social-networks > ul {
     width: 100%;
     display: flex;
     justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
 }
 
 .navbar-social-networks > ul > li {
@@ -115,8 +117,8 @@ footer > .navbar-social-networks {
     font-size: 2rem;
     color: var(--terciary-color);
     border-radius: 50%;
-    margin: 0.5rem;
     background-color: rgb(228, 226, 226);
+    transition: all 0.3s ease;
 }
 
 .bx:hover {

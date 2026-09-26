@@ -1,7 +1,7 @@
 const projects = [
     {
         idProject: 1,
-        imgProject: 'https://josecarlosalmansa.com/img/monitor-web.png'
+        imgProject: 'https://josecarlosalmansa.com/img/monitor-web.png',
         titleProject: 'Mi Portafolio',
         descriptionProject: 'Mi portafolio es una herramienta para mostrar mis proyectos en un formato atractivo y fácil de navegar.',
         linkProject: 'https://hoja-de-vida-ashy.vercel.app/',
@@ -15,7 +15,7 @@ const references = [
         ocupation: 'Desarrollador Frontend',
         phone: 3016869796,
         email: 'https://www.linkedin.com/in/luis-antonio-cervantes-ortega/',
-    }
+    },
     {
         idReference: 2,
         name: 'Juan Pablo López',
@@ -28,30 +28,30 @@ const references = [
 const experiences = [
     {
         idExperience: 1,
-        languageName: "Java"
+        languageName: "JavaScript",
         percentProgress: 50,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7hMqKWp3pLEG6UPolvcZpoAUamM-NOXUeCA&s"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7hMqKWp3pLEG6UPolvcZpoAUamM-NOXUeCA&s",
         level: 'Básico'
     },
     {
         idExperience: 2,
         languageName: "HTML",
         percentProgress: 50,
-        image: "https://e7.pngegg.com/pngimages/410/100/png-clipart-web-development-html-responsive-web-design-logo-javascript-html-angle-web-design-thumbnail.png"
+        image: "https://e7.pngegg.com/pngimages/410/100/png-clipart-web-development-html-responsive-web-design-logo-javascript-html-angle-web-design-thumbnail.png",
         level: 'Básico'
     },
     {
         idExperience: 3,
         languageName: "CSS",
         percentProgress: 50,
-        image: "https://damiandeluca.com.ar/wp-content/uploads/css3Logo.png"
+        image: "https://damiandeluca.com.ar/wp-content/uploads/css3Logo.png",
         level: 'Básico'
     }
 ]
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (event) {
-        e.preventDefault();
+        event.preventDefault();
 
         const target = document.querySelector(this.getAttribute('href'));
 
@@ -88,8 +88,8 @@ function createCardsProjects(project) {
     containerImg.classList.add('container-img-card');
 
     const imgCard = document.createElement('img');
-    imgProject.src = project.imgProject;
-    imgProject.alt = project.titleProject;
+    imgCard.src = project.imgProject;
+    imgCard.alt = project.titleProject;
     
     const containerDescription = document.createElement('div');
     containerDescription.classList.add('container-description-card');
@@ -114,7 +114,7 @@ function createCardsProjects(project) {
     containerDescription.appendChild(descriptionCard);
     containerDescription.appendChild(goToProject);
 
-    document.querySelector('container-cards').appendChild(cardProject)
+    document.querySelector('.container-cards').appendChild(cardProject)
 
 } 
 
@@ -140,18 +140,22 @@ function createCardsReferences(reference) {
     spanPhone.textContent = reference.phone
     pPhone.appendChild(spanPhone)
 
-    const pEmail = document.createElement('p')
-    pEmail.textContent = 'Email: '
-    const spanEmail = document.createElement('span')
-    spanEmail.textContent = reference.email
-    pEmail.appendChild(spanEmail)
+    const pLinkedin = document.createElement('p');
+    pLinkedin.textContent = 'LinkedIn: ';
+    const aLinkedin = document.createElement('a');
+    aLinkedin.href = reference.email;
+    aLinkedin.target = '_blank';
+    aLinkedin.rel = 'noopener noreferrer';
+    aLinkedin.classList.add('bx', 'bxl-linkedin');
+    aLinkedin.style.color = '#500b49';
+    pLinkedin.appendChild(aLinkedin);
 
-    cardReference.appendChild(pName)
-    cardReference.appendChild(pOcupation)
-    cardReference.appendChild(pPhone)
-    cardReference.appendChild(pEmail)
+    cardReference.appendChild(pName);
+    cardReference.appendChild(pOcupation);
+    cardReference.appendChild(pPhone);
+    cardReference.appendChild(pLinkedin);
 
-    document.querySelector('.card-refrences') appendChild(cardReference)
+    document.querySelector('.card-references') .appendChild(cardReference)
 }
 
 function createCardsExperiences(experience) {
@@ -162,7 +166,7 @@ cardExperience.classList.add('card-experience')
 const imgCard = document.createElement('img')
 imgCard.src = experience.image
 
-const title = document.createElemen('h4')
+const title = document.createElement('h4')
 title.textContent = experience.languageName
 
 const level = document.createElement('h5')
@@ -178,5 +182,5 @@ cardExperience.appendChild(title)
 cardExperience.appendChild(progress)
 cardExperience.appendChild(level)
 
-document.querySelector('.container-experience').appendCHild(cardExperience)
+document.querySelector('.container-experiences').appendChild(cardExperience)
 }

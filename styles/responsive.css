@@ -1,0 +1,104 @@
+@media screen and (max-width: 768px) {
+
+    /* 1. Apilar los dos contenedores principales verticalmente */
+    body {
+        flex-direction: column;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* 2. Barra lateral pasa a ser cabecera superior */
+    body > .left-container {
+        position: static; /* Ya no flota fijo */
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+
+    .left-container > header {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .container-img-profile > .img-profile {
+        width: 110px;
+        height: 110px;
+    }
+
+    .container-name-profile > .name-profile {
+        font-size: 1.4rem;
+    }
+
+    /* 3. El menú pasa a ser horizontal */
+    .navbar-profile > ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .navbar-profile > ul > li {
+        margin-bottom: 0;
+    }
+
+    /* 4. Contenido derecho ocupa todo el ancho */
+    body > .right-container {
+        position: static;
+        width: 100%;
+        left: 0;
+        padding: 1rem 0.5rem;
+    }
+
+    .right-container > .main-container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .section-info {
+        height: auto; /* Permite que la sección crezca según su contenido */
+        padding: 1rem 0;
+    }
+
+    .section-profile > p {
+        font-size: 1.1rem; /* Tamaño de lectura cómodo para celulares */
+        line-height: 1.6;
+    }
+}
+
+/* ========================================================
+   Móviles Pequeños (Menos de 480px)
+   ======================================================== */
+@media screen and (max-width: 480px) {
+
+    /* Las tarjetas de proyectos pasan a diseño vertical (imagen arriba, texto abajo) */
+    .card-projects {
+        width: 100%;
+        max-width: 20rem;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .card-projects > .container-img-card {
+        width: 100%;
+        height: 160px;
+    }
+
+    .container-img-card > img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-projects > .container-description-card {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0 0 10px 10px;
+    }
+
+    /* Tarjetas de experiencia y referencias ocupan espacio flexible */
+    .card-reference, 
+    .card-experience {
+        width: 100%;
+        max-width: 18rem;
+    }
+}
