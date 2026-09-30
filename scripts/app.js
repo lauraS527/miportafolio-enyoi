@@ -49,21 +49,6 @@ const experiences = [
     }
 ]
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (event) {
-        event.preventDefault();
-
-        const target = document.querySelector(this.getAttribute('href'));
-
-        if (target) {
-            window.scrollTo({
-                top: target.offsetTop,
-                behavior:'smooth'
-            });
-        }
-    });
-});
-// Smooth scrolling for dropdown menus
 loadSectionProjects()
 function loadSectionProjects() {
     projects.forEach( project => createCardsProjects(project))
@@ -103,7 +88,8 @@ function createCardsProjects(project) {
     const goToProject = document.createElement('a');
     goToProject.href = project.linkProject;
 
-    goToProject.setAttribute('target','_blank')
+    goToProject.target = '_blank';
+    goToProject.rel = 'noopener noreferrer';
     goToProject.textContent = 'Ir a proyecto';
 
     cardProject.appendChild(containerImg);
@@ -158,6 +144,7 @@ cardExperience.classList.add('card-experience')
 
 const imgCard = document.createElement('img')
 imgCard.src = experience.image
+imgCard.alt = `Logo de ${experience.languageName}`
 
 const title = document.createElement('h4')
 title.textContent = experience.languageName
@@ -176,4 +163,8 @@ cardExperience.appendChild(progress)
 cardExperience.appendChild(level)
 
 document.querySelector('.container-experiences').appendChild(cardExperience)
+
+loadSectionProjects()
+loadSectionReferences()
+loadSectionExperiences()
 }
