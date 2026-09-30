@@ -1,7 +1,7 @@
 const projects = [
     {
         idProject: 1,
-        imgProject: 'https://josecarlosalmansa.com/img/monitor-web.png',
+        imgProject: 'assets/img/portafolio.png',
         titleProject: 'Mi Portafolio',
         descriptionProject: 'Mi portafolio es una herramienta para mostrar mis proyectos en un formato atractivo y fácil de navegar.',
         linkProject: 'https://hoja-de-vida-ashy.vercel.app/',
@@ -30,21 +30,21 @@ const experiences = [
         idExperience: 1,
         languageName: "JavaScript",
         percentProgress: 50,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7hMqKWp3pLEG6UPolvcZpoAUamM-NOXUeCA&s",
+        image: "assets/img/js.svg",
         level: 'Básico'
     },
     {
         idExperience: 2,
         languageName: "HTML",
         percentProgress: 50,
-        image: "https://e7.pngegg.com/pngimages/410/100/png-clipart-web-development-html-responsive-web-design-logo-javascript-html-angle-web-design-thumbnail.png",
+        image: "assets/img/html.svg",
         level: 'Básico'
     },
     {
         idExperience: 3,
         languageName: "CSS",
         percentProgress: 50,
-        image: "https://damiandeluca.com.ar/wp-content/uploads/css3Logo.png",
+        image: "assets/img/css.svg",
         level: 'Básico'
     }
 ]
