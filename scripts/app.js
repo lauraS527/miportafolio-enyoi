@@ -12,16 +12,16 @@ const references = [
     {
         idReference: 1,
         name: 'Luis Cervantes Ortega',
-        ocupation: 'Desarrollador Frontend',
-        phone: 3016869796,
-        email: 'https://www.linkedin.com/in/luis-antonio-cervantes-ortega/',
+        occupation: 'Desarrollador Frontend',
+        phone: '3016869796',
+        linkedin: 'https://www.linkedin.com/in/luis-antonio-cervantes-ortega/',
     },
     {
         idReference: 2,
         name: 'Juan Pablo López',
-        ocupation: 'Desarrollador Backend',
-        phone: 3105908769,
-        email: 'https://www.linkedin.com/in/juanpablolopez/',
+        occupation: 'Desarrollador Backend',
+        phone: '3105908769',
+        linkedin: 'https://www.linkedin.com/in/juanpablolopez/',
     }
 ]
 
@@ -118,44 +118,37 @@ function createCardsProjects(project) {
 
 } 
 
+function createField(label, value) {
+    const p = document.createElement('p');
+    p.textContent = `${label}: `;
+    const span = document.createElement('span');
+    span.textContent = value;
+    p.appendChild(span);
+    return p;
+}
+
 function createCardsReferences(reference) {
     const cardReference = document.createElement('div');
     cardReference.classList.add('card-reference');
 
-    const pName = document.createElement('p')
-    pName.textContent = 'Nombre: '
-    const spanName = document.createElement('span')
-    spanName.textContent = reference.name
-    pName.appendChild(spanName)
-
-    const pOcupation = document.createElement('p')
-    pOcupation.textContent = 'Ocupación: '
-    const spanOcupation = document.createElement('span')
-    spanOcupation.textContent = reference.ocupation
-    pOcupation.appendChild(spanOcupation)
-
-    const pPhone = document.createElement('p')
-    pPhone.textContent = 'Teléfono: '
-    const spanPhone = document.createElement('span')
-    spanPhone.textContent = reference.phone
-    pPhone.appendChild(spanPhone)
-
     const pLinkedin = document.createElement('p');
     pLinkedin.textContent = 'LinkedIn: ';
     const aLinkedin = document.createElement('a');
-    aLinkedin.href = reference.email;
+    aLinkedin.href = reference.linkedin;
     aLinkedin.target = '_blank';
     aLinkedin.rel = 'noopener noreferrer';
+    aLinkedin.setAttribute('aria-label', `LinkedIn de ${reference.name}`);
     aLinkedin.classList.add('bx', 'bxl-linkedin');
-    aLinkedin.style.color = '#500b49';
     pLinkedin.appendChild(aLinkedin);
 
-    cardReference.appendChild(pName);
-    cardReference.appendChild(pOcupation);
-    cardReference.appendChild(pPhone);
-    cardReference.appendChild(pLinkedin);
+    cardReference.append(
+        createField('Nombre', reference.name),
+        createField('Ocupación', reference.occupation),
+        createField('Teléfono', reference.phone),
+        pLinkedin
+    );
 
-    document.querySelector('.card-references') .appendChild(cardReference)
+    document.querySelector('.card-references').appendChild(cardReference);
 }
 
 function createCardsExperiences(experience) {
