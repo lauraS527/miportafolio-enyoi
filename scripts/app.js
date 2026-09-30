@@ -125,7 +125,6 @@ function createCardsReferences(reference) {
     cardReference.append(
         createField('Nombre', reference.name),
         createField('Ocupación', reference.occupation),
-        createField('Teléfono', reference.phone),
         pLinkedin
     );
 

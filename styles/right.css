@@ -96,8 +96,7 @@ body > .right-container {
     text-decoration: none;
     font-size: 0.85rem;
     text-align: center;
-    width: 5rem 1rem;
-    padding: 0.5rem;
+    padding: 0.5rem; 1rem;
     color: #fff; 
     background-color: var(--first-color);
     border-radius: 15px;
@@ -120,7 +119,7 @@ body > .right-container {
 
 .card-references >.card-reference {
     width: 12rem;
-    height: 11rem;
+    min-height: 9rem;
     background-color: var(--first-color);
     border-radius: 10px;
     display: flex;
@@ -190,8 +189,4 @@ body > .right-container {
 
 .progress-bar::-ms-fill {
     background-color: var(--progress-color);
-}
-
-.card-experience > p {
-    color: #050505;
 }
