@@ -113,15 +113,16 @@ header > .container-logo {
 .navbar-social-networks > ul > li {
     list-style: none;
 }
-.bx {
+
+.navbar-social-networks .bx {
     font-size: 2rem;
-    color: var(--terciary-color);
+    color: var(--icon-color);
     border-radius: 50%;
     background-color: rgb(228, 226, 226);
     transition: all 0.3s ease;
 }
 
-.bx:hover {
+.navbar-social-networks .bx:hover {
     background: none;
     box-shadow: 0 0 10px var(--terciary-color);
 }
