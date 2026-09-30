@@ -59,8 +59,6 @@ Este portafolio es mi carta de presentación como **Desarrolladora Fullstack**. 
 ```text
 portfolio/
 ├── assets/
-│   ├── fonts/
-│   ├── icons/
 │   └── img/
 │       ├── cssLogo.png
 │       ├── enyoi-logo-negro.png
