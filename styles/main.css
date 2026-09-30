@@ -4,6 +4,8 @@
     --second-color: rgb(100, 245, 208);
     --terciary-color: rgb(248, 104, 171);
     --fourth-color: rgb(196, 28, 90);
+    --icon-color: #500b49;
+    --progress-color: #874484;
 }
 
 * {
@@ -17,6 +19,7 @@
 
 html {
 height: 100%;
+scroll-behavior: smooth;
 }
 
 body {

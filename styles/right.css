@@ -49,7 +49,7 @@ body > .right-container {
 
 .card-projects {
     width: 18rem;
-    height: 12rem;
+    min-height: 12rem;
     border-radius: 10px;
     background-color: var(--terciary-color);
     margin: 1rem;
@@ -58,19 +58,19 @@ body > .right-container {
 
 .card-projects > .container-img-card {
     width: 50%;
-    height: 100%;
 }
 
 .container-img-card > img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 7px 0 0 7px;
     display: block;
 }
 
 .card-projects > .container-description-card {
     width: 50%;
-    height: 100%;
+    padding: 0.5rem;
     display: flex;
     border-radius: 0 7px 7px 0;
     flex-direction: column;
@@ -96,15 +96,14 @@ body > .right-container {
     text-decoration: none;
     font-size: 0.6rem;
     text-align: center;
-    width: 5rem;
-    padding: 0.5rem;
-    color:darkgray; 
+    padding: 0.5rem 1rem;
+    color: #fff; 
     background-color: var(--first-color);
     border-radius: 15px;
 }
 
 .container-description-card > a:hover {
-    background-color: var(--second-color);
+    background-color: var(--fourth-color);
     box-shadow: 0 0 10px #fff;
 }
 
@@ -139,17 +138,14 @@ body > .right-container {
     color:#fff;
 }
 
-.card-reference >.bx {
-    font-size: 1rem;
-    color: var(--terciary-color);
-    border-radius: 50%;
-    margin: 0.2rem;
-    background-color: rgb(228, 226, 226);
+.card-reference .bx {
+    font-size: 1.5rem;
+    color: var(--icon-color);
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.bx:hover {
-    background: none;
+.card-reference .bx:hover {
     box-shadow: 0 0 10px var(--terciary-color);
 }
 
@@ -184,15 +180,15 @@ body > .right-container {
 }
 
 .progress-bar::-webkit-progress-value {
-    background-color: #874484;
+    background-color: var(--progress-color);
 }
 
 .progress-bar::-moz-progress-bar {
-    background-color: #874484;
+    background-color: var(--progress-color);
 }
 
 .progress-bar::-ms-fill {
-    background-color: #874484;
+    background-color: var(--progress-color);
 }
 
 .card-experience > p {
