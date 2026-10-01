@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="styles/responsive.css">
     </head>
 <body>
-    <div class="left-container">
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+    <aside class="left-container" aria-label="Perfil y navegación">
         <header>
         <div class="container-img-profile">
             <img class="img-profile" src="assets/img/laura-serna.png" alt="Foto de Laura Serna">        
@@ -23,12 +24,12 @@
             <h1 class="name-profile">Laura N. Serna Cadavid</h1>
         </div>
 
-        <nav class="navbar-profile">
+        <nav class="navbar-profile" aria-label="Navegación principal">
             <ul>
                 <li><a href="#section-profile">Perfil</a></li>
                 <li><a href="#section-projects">Proyectos</a></li>
                 <li><a href="#section-references">Referencias</a></li>
-                <li><a href="#section-experiences">Experiencia</a></li>
+                <li><a href="#section-experiences">Habilidades</a></li>
             </ul>
         </nav>
         
@@ -37,7 +38,7 @@
         </div>
         </header>
         <footer>
-        <nav class="navbar-social-networks">
+        <nav class="navbar-social-networks" aria-label="Redes sociales y contacto">
             <ul>
                 <li><a href="https://www.facebook.com/laura.serna.58152559?locale=es_LA" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a></li>
                 <li><a href="https://wa.link/t9wbd3" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class='bx bxl-whatsapp-square'></i></a></li>
@@ -47,9 +48,9 @@
             </ul>    
         </nav>
         </footer>
-    </div>
+    </aside>
     <div class="right-container">
-        <main class="main-container">
+        <main id="main-content" class="main-container" tabindex="-1">
             <section id="section-profile" class="section-info section-profile">
                 <h2>Perfil</h2>
             <p>
@@ -69,7 +70,7 @@
                 <div class="card-references"></div>                        
             </section>
             <section id="section-experiences" class="section-info section-experiences">
-                <h2>Experiencia</h2>
+                <h2>Habilidades</h2>
                 <div class="container-experiences"></div>        
             </section>
         </main>

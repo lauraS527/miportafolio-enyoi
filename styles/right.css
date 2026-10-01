@@ -91,8 +91,7 @@ body > .right-container {
     margin-top: 1rem;
 }
 
-.container-description-card > a {
-    margin-top: 1rem;
+.container-description-card .project-links > a {
     text-decoration: none;
     font-size: 0.85rem;
     text-align: center;
@@ -102,7 +101,16 @@ body > .right-container {
     border-radius: 15px;
 }
 
-.container-description-card > a:hover {
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+.container-description-card > .project-links > a:hover {
     background-color: var(--fourth-color);
     box-shadow: 0 0 10px #fff;
 }
@@ -120,13 +128,13 @@ body > .right-container {
 .card-references >.card-reference {
     width: 12rem;
     min-height: 9rem;
-    background-color: var(--first-color);
+    background-color: #fff;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem;
-    color: #050505;
+    color: #212121;
     line-height: 1.5rem;
     font-size: 1rem;
 }
@@ -135,7 +143,7 @@ body > .right-container {
     font-size: 0.8rem;
     text-align: right;
     font-weight: 600;
-    color:#fff;
+    color: var(--icon-color);
 }
 
 .card-reference .bx {
@@ -171,22 +179,8 @@ body > .right-container {
     border-radius: 50%;
 }
 
-.progress-bar {
-    width: 8rem;
-    height: 1rem;
-    border-radius: 10px;
-    margin-top: 0.5rem;
-    overflow: hidden;
-}
-
-.progress-bar::-webkit-progress-value {
-    background-color: var(--progress-color);
-}
-
-.progress-bar::-moz-progress-bar {
-    background-color: var(--progress-color);
-}
-
-.progress-bar::-ms-fill {
-    background-color: var(--progress-color);
+.skill-level {
+    margin-top: 0.25rem;
+    color: #212121;
+    font-weight: 600;
 }

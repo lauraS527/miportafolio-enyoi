@@ -2,9 +2,10 @@ const projects = [
     {
         idProject: 1,
         imgProject: 'assets/img/portafolio.png',
-        titleProject: 'Mi Portafolio',
-        descriptionProject: 'Mi portafolio es una herramienta para mostrar mis proyectos en un formato atractivo y fácil de navegar.',
-        linkProject: 'https://hoja-de-vida-ashy.vercel.app/',
+        titleProject: 'Portafolio web',
+        descriptionProject: 'Sitio personal responsivo para presentar mi perfil, habilidades y proyectos.',
+        demoProject: 'https://lauras527.github.io/miportafolio-enyoi/',
+        sourceProject: 'https://github.com/lauraS527/miportafolio-enyoi',
     }
 ]
 
@@ -23,25 +24,22 @@ const references = [
     }
 ]
 
-const experiences = [
+const skills = [
     {
         idExperience: 1,
         languageName: "JavaScript",
-        percentProgress: 50,
         image: "assets/img/js.svg",
         level: 'Básico'
     },
     {
         idExperience: 2,
         languageName: "HTML",
-        percentProgress: 50,
         image: "assets/img/html.svg",
         level: 'Básico'
     },
     {
         idExperience: 3,
         languageName: "CSS",
-        percentProgress: 50,
         image: "assets/img/css.svg",
         level: 'Básico'
     }
@@ -55,8 +53,8 @@ function loadSectionReferences (){
     references.forEach( reference => createCardsReferences(reference))
 }
 
-function loadSectionExperiences (){
-    experiences.forEach ( experience => createCardsExperiences(experience))
+function loadSectionSkills (){
+    skills.forEach(skill => createSkillCard(skill))
 }
 
 
@@ -80,12 +78,20 @@ function createCardsProjects(project) {
     const descriptionCard = document.createElement('p');
     descriptionCard.textContent = project.descriptionProject;
 
-    const goToProject = document.createElement('a');
-    goToProject.href = project.linkProject;
+    const projectLinks = document.createElement('div');
+    projectLinks.classList.add('project-links');
 
-    goToProject.target = '_blank';
-    goToProject.rel = 'noopener noreferrer';
-    goToProject.textContent = 'Ir a proyecto';
+    const demoLink = document.createElement('a');
+    demoLink.href = project.demoProject;
+    demoLink.target = '_blank';
+    demoLink.rel = 'noopener noreferrer';
+    demoLink.textContent = 'Ver demo';
+
+    const sourceLink = document.createElement('a');
+    sourceLink.href = project.sourceProject;
+    sourceLink.target = '_blank';
+    sourceLink.rel = 'noopener noreferrer';
+    sourceLink.textContent = 'Ver código';
 
     cardProject.appendChild(containerImg);
     cardProject.appendChild(containerDescription);
@@ -93,7 +99,9 @@ function createCardsProjects(project) {
     containerImg.appendChild(imgCard);
     containerDescription.appendChild(titleCard);
     containerDescription.appendChild(descriptionCard);
-    containerDescription.appendChild(goToProject);
+    containerDescription.appendChild(projectLinks);
+    projectLinks.appendChild(demoLink);
+    projectLinks.appendChild(sourceLink);
 
     document.querySelector('.container-cards').appendChild(cardProject)
 
@@ -131,33 +139,28 @@ function createCardsReferences(reference) {
     document.querySelector('.card-references').appendChild(cardReference);
 }
 
-function createCardsExperiences(experience) {
+function createSkillCard(skill) {
 
 const cardExperience = document.createElement('div')
 cardExperience.classList.add('card-experience')
 
 const imgCard = document.createElement('img')
-imgCard.src = experience.image
-imgCard.alt = `Logo de ${experience.languageName}`
+imgCard.src = skill.image
+imgCard.alt = `Logo de ${skill.languageName}`
 
 const title = document.createElement('h4')
-title.textContent = experience.languageName
+title.textContent = skill.languageName
 
-const level = document.createElement('h5')
-level.textContent = experience.level
-
-const progress = document.createElement('progress')
-progress.classList.add('progress-bar')
-progress.setAttribute('value', experience.percentProgress)
-progress.setAttribute('max','100')
+const levelDescription = document.createElement('p')
+levelDescription.classList.add('skill-level')
+levelDescription.textContent = `Nivel actual: ${skill.level}`
 
 cardExperience.appendChild(imgCard)
 cardExperience.appendChild(title)
-cardExperience.appendChild(progress)
-cardExperience.appendChild(level)
+cardExperience.appendChild(levelDescription)
 
 document.querySelector('.container-experiences').appendChild(cardExperience)
 }
 loadSectionProjects()
 loadSectionReferences()
-loadSectionExperiences()
+loadSectionSkills()

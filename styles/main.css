@@ -5,7 +5,6 @@
     --terciary-color: rgb(248, 104, 171);
     --fourth-color: rgb(196, 28, 90);
     --icon-color: #500b49;
-    --progress-color: #874484;
 }
 
 * {
@@ -17,13 +16,50 @@
     font-style: normal;
 }
 
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #111;
+    outline-offset: 4px;
+}
+
+.skip-link {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 10;
+    padding: 0.75rem 1rem;
+    transform: translateY(-200%);
+    color: #fff;
+    background: #111;
+    border-radius: 0.25rem;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
 html {
-height: 100%;
-scroll-behavior: smooth;
+    height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
     width: 100%;
     min-height: 100vh;
     display: flex;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
 }
