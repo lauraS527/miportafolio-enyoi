@@ -95,6 +95,10 @@
         border-radius: 0 0 10px 10px;
     }
 
+    .project-links {
+        margin-top: 0;
+    }
+
     /* Tarjetas de experiencia y referencias ocupan espacio flexible */
     .card-reference, 
     .card-experience {

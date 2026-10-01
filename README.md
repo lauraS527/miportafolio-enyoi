@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <b>Portafolio web personal e interactivo desarrollado con HTML5, CSS3 y JavaScript moderno (ES6+).</b>
+  <b>Portafolio web personal desarrollado con HTML5, CSS3 y JavaScript.</b>
   <br>
-  Diseño responsivo enfocado en una experiencia de usuario fluida, limpia y dinámica.
+  Diseño adaptable para presentar mi perfil, habilidades y proyectos.
 </p>
 
 <p align="center">
@@ -27,15 +27,15 @@
 
 ## 🌟 Acerca del Proyecto
 
-Este portafolio es mi carta de presentación como **Desarrolladora Fullstack**. Fue concebido no solo para exhibir mis proyectos, experiencias y referencias profesionales, sino también como una muestra práctica de maquetación avanzada, manipulación del DOM y arquitectura CSS modular.
+Este portafolio es mi carta de presentación como **desarrolladora full stack en formación**. Reúne mi perfil, habilidades actuales, proyectos publicados y referencias profesionales, y me permite practicar maquetación web y manipulación del DOM.
 
-### ✨ Características Principales
+### ✨ Características principales
 
-- **📱 100% Responsivo:** Adaptado meticulosamente para teléfonos móviles, tablets, laptops y pantallas de escritorio mediante Media Queries y Flexbox.
-- **⚡ Carga Dinámica de Contenido:** Las secciones de *Proyectos*, *Referencias* y *Habilidades/Experiencias* se inyectan dinámicamente en el DOM a través de JavaScript, permitiendo escalabilidad y fácil mantenimiento.
-- **🎨 Identidad Visual y Estilos Modernos:** Paleta de colores consistente mediante variables CSS (`:root`), tipografía personalizada con *Google Fonts (DM Sans)* y transiciones suaves.
-- **🧭 Navegación Suave (Smooth Scroll):** Desplazamiento fluido entre secciones para una navegación cómoda e intuitiva.
-- **🔗 Integración Social Directa:** Accesos directos a WhatsApp, LinkedIn, correo electrónico y proyectos desplegados.
+- **📱 Diseño adaptable:** Reglas CSS responsive para pantallas móviles y de escritorio.
+- **⚡ Contenido dinámico:** Las tarjetas de proyectos, referencias y habilidades se generan desde los datos de JavaScript.
+- **🎨 Estilos personalizados:** Variables CSS, tipografía DM Sans y estilos organizados por secciones.
+- **🧭 Navegación accesible:** Enlaces a las secciones, acceso rápido al contenido principal y foco visible para teclado.
+- **🔗 Enlaces del proyecto:** Acceso a la demo publicada y al código fuente.
 
 ---
 
@@ -44,35 +44,44 @@ Este portafolio es mi carta de presentación como **Desarrolladora Fullstack**. 
 - **Frontend:**
   - **HTML5:** Semántica web estructurada y accesible.
   - **CSS3:** Flexbox, variables CSS nativas, efectos hover y diseño responsivo sin frameworks externos.
-  - **JavaScript (Vanilla ES6+):** Programación funcional, arrays de objetos, métodos de iteración (`forEach`) y manipulación del DOM.
+  - **JavaScript (Vanilla):** Arrays de objetos, métodos de iteración (`forEach`) y manipulación del DOM.
 - **Recursos Externos:**
   - [Boxicons](https://boxicons.com/) para iconografía vectorial.
   - [Google Fonts](https://fonts.google.com/) (DM Sans).
 - **Control de Versiones y Despliegue:**
   - Git y GitHub para control de versiones.
-  - GitHub Pages / Vercel para despliegue continuo.
+  - GitHub Pages para publicar el sitio.
 
 ---
 
 ## 📂 Estructura del Repositorio
 
 ```text
-portfolio/
+miportafolio-enyoi/
 ├── assets/
 │   └── img/
+│       ├── css.svg, html.svg, js.svg
 │       ├── cssLogo.png
 │       ├── enyoi-logo-negro.png
-│       └── laura-serna.png
+│       ├── laura-serna.png
+│       └── portafolio.png
 ├── scripts/
-│   └── app.js             # Lógica JavaScript (render dinámico y eventos)
+│   └── app.js             # Datos y renderizado dinámico de tarjetas
 ├── styles/
-│   ├── main.css           # Estilos globales, variables y tipografía
-│   ├── left.css           # Barra lateral fija (perfil, menú y redes)
-│   ├── right.css          # Contenido principal (cards, experiencias)
-│   └── responsive.css     # Media queries para móviles y tablets
+│   ├── main.css           # Estilos globales, variables y accesibilidad
+│   ├── left.css           # Perfil, navegación y redes
+│   ├── right.css          # Contenido principal y tarjetas
+│   └── responsive.css     # Adaptaciones para pantallas pequeñas
 ├── index.html             # Estructura principal
 └── README.md              # Documentación del proyecto
 ```
+
+### 💻 Proyecto destacado
+
+- [Demo del portafolio](https://lauras527.github.io/miportafolio-enyoi/)
+- [Código fuente](https://github.com/lauraS527/miportafolio-enyoi)
+
+La sección de proyectos enlaza a la demo y al repositorio. A medida que publique otros proyectos, puedo incorporarlos allí con una descripción y sus enlaces.
 
 ---
 
