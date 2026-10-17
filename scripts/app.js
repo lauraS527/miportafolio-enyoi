@@ -6,7 +6,15 @@ const projects = [
         descriptionProject: 'Sitio personal responsivo para presentar mi perfil, habilidades y proyectos.',
         demoProject: 'https://lauras527.github.io/miportafolio-enyoi/',
         sourceProject: 'https://github.com/lauraS527/miportafolio-enyoi',
-    }
+    },
+{
+        idProject: 2,
+        imgProject: 'assets/img/taskmaster.png',
+        titleProject: 'TaskMaster',
+        descriptionProject: 'Aplicación web para crear, organizar y dar seguimiento a tareas personales o de equipo, con un tablero Kanban.',
+        demoProject: 'https://lauras527.github.io/taskmaster/',
+        sourceProject: 'https://github.com/lauraS527/taskmaster',
+    },
 ]
 
 const references = [
