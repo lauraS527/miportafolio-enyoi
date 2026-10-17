@@ -9,7 +9,7 @@ const projects = [
     },
 {
         idProject: 2,
-        imgProject: 'assets/img/taskmaster.png',
+        imgProject: 'assets/img/taskmaster.jpg',
         titleProject: 'TaskMaster',
         descriptionProject: 'Aplicación web para crear, organizar y dar seguimiento a tareas personales o de equipo, con un tablero Kanban.',
         demoProject: 'https://taskmaster-snowy-zeta.vercel.app',
