@@ -7,7 +7,7 @@ const projects = [
         demoProject: 'https://lauras527.github.io/miportafolio-enyoi/',
         sourceProject: 'https://github.com/lauraS527/miportafolio-enyoi',
     },
-{
+    {
         idProject: 2,
         imgProject: 'assets/img/taskmaster.jpg',
         titleProject: 'TaskMaster',
@@ -15,6 +15,16 @@ const projects = [
         demoProject: 'https://taskmaster-snowy-zeta.vercel.app',
         sourceProject: 'https://github.com/lauraS527/taskmaster',
     },
+    {
+        idProject: 3,
+        imgProject: 'assets/img/tu-hotel.png',
+        titleProject: 'Tu Hotel',
+        descriptionProject: 'Aplicación web para consultar hoteles y reservar habitaciones. Los clientes buscan y reservan; los administradores gestionan el catálogo.',
+        demoProject: 'https://tu-hotel.vercel.app/',
+        sourceProject: 'https://github.com/lauraS527/tu-hotel',
+    },
+
+    }
 ]
 
 const references = [
