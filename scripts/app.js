@@ -22,8 +22,6 @@ const projects = [
         descriptionProject: 'Aplicación web para consultar hoteles y reservar habitaciones. Los clientes buscan y reservan; los administradores gestionan el catálogo.',
         demoProject: 'https://tu-hotel.vercel.app/',
         sourceProject: 'https://github.com/lauraS527/tu-hotel',
-    },
-
     }
 ]
 
